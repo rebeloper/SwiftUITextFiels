@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		C994834225E9534D00CAC623 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C994832D25E9534C00CAC623 /* ContentView.swift */; };
 		C994834325E9534D00CAC623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C994832E25E9534D00CAC623 /* Assets.xcassets */; };
 		C994834425E9534D00CAC623 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C994832E25E9534D00CAC623 /* Assets.xcassets */; };
+		C994835125E9650A00CAC623 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = C994835025E9650A00CAC623 /* Introspect */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C994835125E9650A00CAC623 /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +108,9 @@
 			dependencies = (
 			);
 			name = "SwiftUITextFiels (iOS)";
+			packageProductDependencies = (
+				C994835025E9650A00CAC623 /* Introspect */,
+			);
 			productName = "SwiftUITextFiels (iOS)";
 			productReference = C994833325E9534D00CAC623 /* SwiftUITextFiels.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +158,9 @@
 				Base,
 			);
 			mainGroup = C994832625E9534B00CAC623;
+			packageReferences = (
+				C994834F25E9650A00CAC623 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = C994833425E9534D00CAC623 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -439,6 +447,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C994834F25E9650A00CAC623 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C994835025E9650A00CAC623 /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C994834F25E9650A00CAC623 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C994832725E9534B00CAC623 /* Project object */;
 }

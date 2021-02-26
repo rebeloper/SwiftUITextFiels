@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Introspect
 
 struct ContentView: View {
     
@@ -41,6 +42,9 @@ struct ContentView: View {
                     } else {
                         isValidEmail = false
                     }
+                }
+                .introspectTextField { (textField) in
+                    textField.becomeFirstResponder()
                 }
                 
                 Text(email)
